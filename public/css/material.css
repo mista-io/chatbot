@@ -3855,15 +3855,14 @@ body .jumbotron-material-blue-grey,
 }
 
 .btn-success:not(.btn-link):not(.btn-flat) {
-    background-color: #4caf50;
+    background-color: #31b772;
     color: rgba(255, 255, 255, 0.84);
 }
 
 .btn-info:not(.btn-link):not(.btn-flat) {
-    background-color: #03a9f4;
+    background-color: #33b672;
     color: rgba(255, 255, 255, 0.84);
 }
-
 .btn-warning:not(.btn-link):not(.btn-flat) {
     background-color: #ff5722;
     color: rgba(255, 255, 255, 0.84);
@@ -9261,7 +9260,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 
 .nav-tabs {
-    background: #009688;
+    background: #31b772;
 }
 
 .nav-tabs > li > a {
@@ -9721,9 +9720,8 @@ icon-material-blue-grey {
 }
 
 .panel-primary > .panel-heading {
-    background-color: #009688;
+    background-color: #31b772;
 }
-
 .panel-success > .panel-heading {
     background-color: #4caf50;
 }

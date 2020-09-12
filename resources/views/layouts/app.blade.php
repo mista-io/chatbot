@@ -9,7 +9,7 @@
 	  @endif
 	  <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
-      <title>{{ get_option('site_title','Tricky Chat Pro') }}</title>
+      <title>{{ get_option('site_title','Mista Chat') }}</title>
 
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
@@ -68,7 +68,7 @@
 		<!-- Start Header --> 
 		<header class="admin-head">
 		   <div class="left-header">
-			  <span id="system-name">{{ get_option('company_name') }}</span>
+			  <span id="system-name"><img src="{{asset('public/images/mista-logo.png')}}" width="20%"></span>
 			  <div class="mini-nav">
 				 <div class="togglebutton">
 					<label>

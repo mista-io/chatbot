@@ -101,9 +101,16 @@ body {
 
 .admin-head {
     width: 100%;
-    height: 62px;
-    background: #201f2b;
-    border-bottom: 2px solid #db1430;
+    background-color: #ffffff;
+    min-height: 61px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 1px #eef1f8;
+    z-index: 888;
+    border-bottom: 1px solid #EFEFEF;
+    margin: 0 !important;
 }
 
 .left-header {
@@ -137,7 +144,7 @@ body {
 }
 
 .custom-navbar {
-    background-color: #201f2b !important;
+    background-color: #ffffff !important;
     height: 40px;
 }
 
@@ -147,7 +154,7 @@ body {
 }
 
 .top-right-menu {
-    color: #CCC !important;
+    color: #1d2343 !important;
     font-weight: 400;
 }
 
@@ -156,12 +163,11 @@ body {
 
 .mini-nav .togglebutton label input[type=checkbox]:checked+.toggle:after,
 .togglebutton-default label input[type=checkbox]:checked+.toggle:after {
-    background-color: #db1430;
+    background-color: #33b672;
 }
 
-.mini-nav .togglebutton label input[type=checkbox]:checked+.toggle,
-.togglebutton-default label input[type=checkbox]:checked+.toggle {
-    background-color: aliceblue;
+.mini-nav .togglebutton label input[type=checkbox]:checked+.toggle, .togglebutton-default label input[type=checkbox]:checked+.toggle {
+    background-color: #cccccc;
 }
 
 .mini-nav .togglebutton label .toggle:after {
@@ -392,10 +398,9 @@ select.form-control:focus {
     min-height: 100%;
     padding-bottom: 60px;
     position: absolute;
-    background: #282733;
+    background: #1d2343;
     z-index: 10;
 }
-
 .content {
     width: 100%;
     position: relative;
@@ -1294,8 +1299,8 @@ checkbox.error + span{
   border: 1px dashed #000;
 }
 
-.btn-primary:not(.btn-link):not(.btn-flat){
-	background-color:#007bff;
+.btn-primary:not(.btn-link):not(.btn-flat) {
+    background-color: #33b672;
 }
 
 .btn-primary:not(.btn-link):not(.btn-flat):hover{
@@ -1627,14 +1632,14 @@ ul.nav-tabs > li.active{
   padding-left: 6px;
 }
 .chat .chat-history .message {
-  color: white;
-  padding: 6px 12px;
-  line-height: 26px;
-  font-size: 16px;
-  border-radius: 7px;
-  margin-bottom: 15px;
-  position: relative;
-  display: inline-block;
+    color: #0c0c0c;
+    padding: 6px 12px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
 }
 .chat .chat-history .message:after {
     bottom: 100%;
@@ -1666,7 +1671,7 @@ ul.nav-tabs > li.active{
   background: #007bff;
 }
 .chat .chat-history .other-message {
-  background: #ff7979;
+    background: #e5e5e5;
 }
 .chat .chat-history .other-message:after {
   border-bottom-color: #ff7979;
@@ -1692,9 +1697,8 @@ ul.nav-tabs > li.active{
 }
 
 .me {
-  color: #ff7979;
+    color: #c1c1c1;
 }
-
 .align-left {
   text-align: left;
 }
