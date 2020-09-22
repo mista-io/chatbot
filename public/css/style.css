@@ -1632,7 +1632,7 @@ ul.nav-tabs > li.active{
   padding-left: 6px;
 }
 .chat .chat-history .message {
-    color: #0c0c0c;
+    color: #ffffff;
     padding: 6px 12px;
     line-height: 26px;
     font-size: 16px;
@@ -1650,7 +1650,7 @@ ul.nav-tabs > li.active{
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #007bff;
+    border-bottom-color: #2f8e5d;
     border-width: 6px;
 }
 
@@ -1668,16 +1668,16 @@ ul.nav-tabs > li.active{
 }
 
 .chat .chat-history .my-message {
-  background: #007bff;
+    background: #2f8e5d;
 }
 .chat .chat-history .other-message {
-    background: #e5e5e5;
+    background: #009688;
 }
 .chat .chat-history .other-message:after {
-  border-bottom-color: #ff7979;
-  position: absolute;
-  left: auto;
-  right: 10px;
+    border-bottom-color: #009688;
+    position: absolute;
+    left: auto;
+    right: 10px;
 }
 .chat .chat-message {
   padding: 30px;
@@ -1689,7 +1689,7 @@ ul.nav-tabs > li.active{
 }
 
 .online {
-  color: #007bff;
+    color: #38de44;
 }
 
 .offline {
@@ -1697,8 +1697,9 @@ ul.nav-tabs > li.active{
 }
 
 .me {
-    color: #c1c1c1;
+    color: #1c81af;
 }
+
 .align-left {
   text-align: left;
 }

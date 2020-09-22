@@ -47,10 +47,13 @@
 	</style>
    </head>
    <body>
+   	
    <?php //var_dump(\Session::get("guest_id")); ?>
+
 	<div class="panel panel-default tricky_chat_widget">
 		<div class="panel-heading">
 		    {!! get_company_option('heading_text',_lang('Live Chat')) !!}
+
 		    <a href="#" class="pull-right chat-expand"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 			
 			<div class="dropdown pull-right">

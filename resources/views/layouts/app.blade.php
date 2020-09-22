@@ -244,9 +244,7 @@
 			 </section>
 		   <!-- End Content -->
 		   <!-- Start Footer Section -->
-		   <footer class="admin-footer">
-			  <p>Developed By Tricky Code &copy; 2018</p>
-		   </footer>
+		  
 		   <!-- End Footer -->
 		</section>
 		<!-- End Content Area Section -->
