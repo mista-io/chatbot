@@ -34,6 +34,32 @@
       @if(get_option('backend_direction') == "rtl")
 	   <link href="{{ asset('public/css/RTL.css') }}" rel="stylesheet" />
 	  @endif
+
+	  <style type="text/css">
+	  	.side-resp li a {
+		    padding-left: 30px !important;
+		    padding-right: 30px !important;
+		}
+
+		#menu li a i {
+		    font-size: 14px;
+		    position: relative;
+		    top: 0px;
+		}
+
+		#menu li a .menu-title {
+			margin-left: 10px;
+		}
+
+		.active-menu {
+		    background: rgba(0, 0, 0, 0.1);
+		}
+
+		.metismenu .glyphicon.arrow {
+			margin-top: 4px;
+		}
+	  </style>
+
 	  <script type="text/javascript">
 	   var direction = "{{ get_option('backend_direction') }}";
 	   var _url = "{{ asset('/') }}";
@@ -68,13 +94,9 @@
 		<!-- Start Header --> 
 		<header class="admin-head">
 		   <div class="left-header">
-			  <span id="system-name"><img src="{{asset('public/images/mista-logo.png')}}" width="20%"></span>
-			  <div class="mini-nav">
-				 <div class="togglebutton">
-					<label>
-					<input type="checkbox" checked>
-					</label>
-				 </div>
+			  <span id="system-name"><img src="{{asset('public/images/mista-lg.png')}}" width="50%"></span>
+			  <div class="mini-nav" style="background: #fff; position: relative; top: -5px;">
+				<i class="mdi-image-dehaze" style="background: #fff; color: #333"></i>
 				 <!--<i class="mdi-image-dehaze"></i>-->
 			  </div>
 		   </div>
@@ -126,10 +148,9 @@
 					</div>
 				 </div>
 			  </div>
-			  <div class="border-bottom"></div>
 			  <!-- End User Profile -->
 			  <nav class="sidebar-nav">
-				 <ul class="metismenu" id="menu">
+				 <ul class="metismenu side-resp" id="menu">
 					<!--if User type is super admin -->
 					@if(Auth::user()->user_type == "super_admin")
 					<li><a href="{{ url('dashboard') }}" aria-expanded="false"><i class="mdi-hardware-desktop-mac"></i>&nbsp;<span class="menu-title">{{ _lang('Dashboard') }}</span></a></li>
@@ -274,6 +295,26 @@
 	@yield('js-script')
 	 <script type="text/javascript">		
 		$(document).ready(function() {
+			// set style on load
+			if (typeof(Storage) !== "undefined") {
+		        if (localStorage.getItem("sidebar") == "responsive") {
+		            $('#menu').removeClass('side-resp');
+		        } else {
+		            $('#menu').addClass('side-resp');
+		        }
+		    }
+
+			// sidebar on responsive
+			$(".mini-nav").click(function () {
+		        if ($(".sidebar").width() == 250) {
+		            $('#menu').removeClass('side-resp');
+		        } else {
+		            $('#menu').addClass('side-resp');
+		        }
+
+		    });
+
+
 			// This command is used to initialize some elements and make them work properly
 			$.material.init();
 			
